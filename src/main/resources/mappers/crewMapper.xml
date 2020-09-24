@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.pier.mappers.crewMapper">
+    <!-- 
+        mybatis-config.xml의 typeAlias에 등록해두지 않았다면    
+        <select id="selectMember" resultType="com.example.dto.MemberVO" >
+            SELECT ID, PW ,NAME FROM TEST
+        </select>
+        이렇게 해야 한다.
+    -->
+    <select id="selectCrewscore" resultType="CrewVO">
+        SELECT 
+			name, positioncareer, position, duties, common, sum, engine, jobknowledge, leader, eng, chemical, adaptive,loyalty,
+			creativity, challenge, total
+			FROM web.list
+    </select>
+    
+    <select id="selectlist" resultType="CrewVO">
+        SELECT 
+			vessel, ship, GWT, ENG, position, work, nation, top, reason
+			FROM web.crew
+    </select>
+
+</mapper>

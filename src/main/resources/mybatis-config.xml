@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+    <configuration>
+ 		<!-- vessel -->
+ 		 <typeAliases>
+            <typeAlias type="com.pier.domain.ShipVO" alias="ShipVO"/>
+            <typeAlias type="com.pier.domain.MemberVO" alias="MemberVO"/>
+            <typeAlias type="com.pier.domain.MatchingVO" alias="MatchingVO"/>
+            <typeAlias type="com.pier.domain.CrewVO" alias="CrewVO"/>
+         </typeAliases>
+
+
+    </configuration>
+
+
